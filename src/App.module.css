@@ -1,0 +1,208 @@
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f0f2f5;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: 700;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 15px;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.label {
+  font-size: 1.2em;
+  color: #555;
+  font-weight: 600;
+}
+
+.select {
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  min-width: 250px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  -webkit-appearance: none; /* Usuń domyślne strzałki w Chrome/Safari */
+  -moz-appearance: none;    /* Usuń domyślne strzałki w Firefox */
+  appearance: none;         /* Usuń domyślne strzałki */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2069.9a14.7%2014.7%200%200%00-20.9%200L146.2%20190.2%2026%2069.9a14.7%2014.7%200%200%00-20.9%2020.9l130.4%20130.4a14.7%2014.7%200%200%0020.9%200l130.4-130.4a14.7%2014.7%200%200%000-20.9z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+  padding-right: 40px; /* Dodaj padding, aby strzałka była widoczna */
+}
+
+.select:hover {
+  border-color: #007bff;
+}
+.select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Usunięte style dla .addCityInput i .addButton */
+
+
+.errorMessage {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background-color: #e9f7fe;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1);
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loadingMessage {
+  font-size: 1.3em;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.travelGuideContainer {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #007bff;
+}
+
+.guideHeader {
+  color: #007bff;
+  margin-bottom: 25px;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: #444;
+  text-align: justify;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.sectionHeader {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  font-weight: 600;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 8px;
+}
+
+.attractionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.attractionCard {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+.attractionCard:hover {
+    transform: translateY(-5px);
+}
+
+.attractionName {
+  font-size: 1.3em;
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.attractionDetails {
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.infoList {
+    list-style: none;
+    padding: 0;
+}
+
+.infoItem {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  color: #555;
+}
+.infoItem strong {
+    color: #333;
+}
+
+.warningMessage {
+  color: #ffc107;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000'; 
+const API_BASE_URL = 'http://hackyeahtraveltask-production.up.railway.app'; 
 
 async function handleResponse(response) {
     if (!response.ok) {
